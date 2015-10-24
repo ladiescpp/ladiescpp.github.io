@@ -1,0 +1,189 @@
+$menu-font: 'Nunito', sans-serif;
+
+$header-margin: 20px;
+$top-margin: 20px;
+/* nice sticky footer, from http://getbootstrap.com/examples/sticky-footer/ */
+html, body {
+  height: 100%;
+  background-color: $back-ground-color;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+footer[role=contentinfo] {
+  height: 60px;
+}
+
+/* print page content only no header, footer and asides, works with any page layout */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  /* use .no-print if you want to hide something inside page-content from printing */
+  .no-print, .no-print * {
+    display: none !important;
+  }
+  .page-content, .page-content * {
+    visibility: visible;
+  }
+  .page-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+/*.navbar-default {
+  font-family: $menu-font;
+  position: absolute;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+
+  background-color: $accent-color;
+  background-image: none;
+
+  top: 0px;
+  width: 100%;
+  height: $header-size;
+
+
+  .navbar-brand {
+    color: $high-light-color;
+  }
+}
+
+.panel-default>.panel-heading {
+  background-image: none;
+  background-color: $accent-color;
+  color: $high-light-color;
+}
+
+footer[role=contentinfo] {
+  height: 60px;
+  display: none;
+  margin-bottom: $header-size;
+}
+
+.navbar-default {
+  .navbar-nav>li>a {
+    color: $high-light-color;
+  }
+}
+
+.navbar-brand {
+  height: $header-size;
+}
+
+.navbar-default .navbar-nav {
+  li {
+    width: 130px; 
+    height: $header-size;
+    text-align: center; 
+  }
+
+  .active {
+    a, a:hover, a:focus {
+      background-color: $accent-color;
+      color: $base-font-color;
+      background-image: none;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+    }
+  }
+
+  .open {
+    a, a:hover, a:focus {
+      background-color: $base-font-color;
+      color: $high-light-color;
+      background-image: none;
+    }
+  }
+}
+
+.nav {
+  ul {
+    height: $header-size;
+    margin-top: 20px;
+    a {
+    }
+  }
+}
+*/
+
+header {
+  font-family: $menu-font;
+
+  .container {
+    height: 100%;
+  }
+
+  .navbar {
+    width: 100%;
+//    height: $header-size;
+    padding: $header-margin;
+    border: 1px solid transparent;
+    background-color: $header-color;
+
+    
+    .navbar-header {
+      a {
+        color: $accent-color;
+        font-size: 1.5em;
+      }
+    }
+
+    ul {
+      height: 100%;
+      li {
+        width: 100px;
+        text-align: center;
+        a {
+          color: $dark-link-color;
+          display: inline-block;
+          margin: 0 auto;
+        }
+
+      }
+
+    }
+
+
+  }
+
+}
+
+/*side*/
+.sidebar {
+  margin-top: $top-margin;
+}
+
+/*h_n*/
+.page-header {
+  font-family: $menu-font;
+//  border-bottom: 4px dashed $accent-color2;
+  background-color: $header-color;
+  padding: 5px 20px;
+  margin: 5px 0;
+  .entry-title {
+    color: $accent-color-dark;
+    a {
+      color: $dark-link-color;
+
+    }
+  }
+}
+
+.page-content, .sidebar {
+  margin-top: $header-margin;
+}

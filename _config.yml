@@ -2,10 +2,11 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+
+url: ladiespp.github.io
+title: Ladies++
+subtitle: A community for women who love to code in C++.
+author: ladies C++er
 simple_search: https://www.google.com/search
 description:
 
