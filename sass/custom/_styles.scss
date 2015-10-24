@@ -146,10 +146,10 @@ header {
 article {
   .page-header {
     font-family: $menu-font;
-    border-bottom: 1px solid $em-text-color;
+    border-bottom: 0 solid $em-text-color;
     padding: 10px 20px;
     margin: 0;
-    @extend .dark-background;
+//    @extend .dark-background;
 
     .entry-title {
       @extend .light-link;
@@ -157,7 +157,7 @@ article {
       margin: 0;
       font-weight: bold;
       a {
-        @extend .light-link;
+        @extend .dark-link;
       }
       a:hover {
         @extend .dark-link-hover;
