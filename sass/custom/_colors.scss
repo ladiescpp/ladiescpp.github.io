@@ -54,15 +54,19 @@ $accent-color2: #F0C808;
 $high-light-color: #FFF;*/
 @import url(https://fonts.googleapis.com/css?family=Nunito:300);
 
-$header-color: #000;
-$back-ground-color: #edebe6;
-$dark-link-color: $back-ground-color;
-$default-text-color: #505050;
-
 $base-color: #FCE8D4;
 $base-font-color: #494a4b;
 $accent-color: #ba9b68;
-$accent-color-dark: #999;
+$accent-color-dark: #ae7b3a;
 $accent-color2: #F0C808;
 $high-light-color: #FFF;
+
+
+$header-color: #000;
+$back-ground-color: #edebe6;
+$dark-link-color: $accent-color;
+$dark-link-color-hover: $accent-color-dark;
+$default-text-color: #505050;
+$em-text-color:#000;
+
 

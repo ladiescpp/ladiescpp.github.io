@@ -7,9 +7,9 @@ layout: default
     <article role="article">
       {% unless page.no_header %}
         <header class="page-header">
-          {% if page.date %}
-            <p class="meta text-muted text-uppercase">{% include post/date.html %}{{ time }}</p>
-          {% endif %}
+          <!--{% if page.date %}-->
+            <!--<p class="meta text-muted text-uppercase">{% include post/date.html %}{{ time }}</p>-->
+          <!--{% endif %}-->
           {% if page.title %}
             <h1 class="entry-title">
               {% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}
@@ -23,11 +23,13 @@ layout: default
         </header>
 
 
-      {% if page.date %}
-      <p class="meta text-muted text-uppercase">{% include post/date.html %}{{ time }}</p>
-      {% endif %}
       {% endunless %}
       <div class="entry-content">
+        <div class="entry-date">
+          {% if page.date %}
+          <p class="meta text-muted text-uppercase">{% include post/date.html %}{{ time }}</p>
+          {% endif %}
+        </div>
         {{ content }}
       </div>
       {% unless page.footer == false %}
