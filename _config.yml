@@ -6,7 +6,7 @@
 url: http://ladiespp.github.io
 title: Ladies++
 subtitle: A community for women who love to code in C++.
-author: ladies C++er
+author: ladies++
 simple_search: https://www.google.com/search
 description:
 
@@ -99,4 +99,4 @@ disqus_show_comment_count: false
 google_analytics_tracking_id:
 
 # Facebook Like
-facebook_like: false
+facebook_like: true

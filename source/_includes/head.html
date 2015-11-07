@@ -2,12 +2,25 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
+  <!--
+
+      o　　　ﾟ　o　　　　ﾟ　　ﾟ　　o
+    　○ ＜"￣＼ 。　o .　ﾟ　　　｡
+    。 ﾟ.o |＿＿__） 。.ﾟ　　Welcome to Ladies++
+    　。ヽ(´・ω・`)/　。ﾟ　　　　o
+    。　 （::. 　　 ）。　ﾟ.　　o
+
+  -->
+
   <title>{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} - {% endif %}{{ site.title }}</title>
   <meta name="author" content="{{ site.author }}">
 
   {% if page.description %}<meta name="description" content="{{ page.description | strip_html | condense_spaces | truncate:150 }}">{% endif %}
   {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
 
+  <script type="text/javascript">
+    console.log("%cJoin Ladies++!!%c\n> %cWe welcome your contribution \u2665 ladiescpp\u2665gmail.com", "color: #ba9b68  ; font-size: 3em; font-weight: bold;","color: black; font-size: 1em;","color: black; font-size: 2em;");
+  </script>
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
