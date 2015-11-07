@@ -4,9 +4,10 @@ comments: false
 sharing: false
 footer: true
 ---
-<img src="" style="float:left">
 
 # Ladies++
+
+<img src="/images/icon.png" style="float:left">
 
 Ladies++はC++が好きな女性たちのためのコミュニティです。
 
