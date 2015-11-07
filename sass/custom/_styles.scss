@@ -1,5 +1,5 @@
-$menu-font: 'Nunito', sans-serif;
-$text-font: 'Nunito', sans-serif;
+$menu-font: 'Nunito', ‘ヒラギノ角ゴ ProN W3’, ‘Hiragino Kaku Gothic ProN’, ‘メイリオ’, ‘Meiryo’, ‘ＭＳ Ｐゴシック’, ‘MS PGothic’, sans-serif;
+$text-font: 'Nunito', ‘ヒラギノ角ゴ ProN W3’, ‘Hiragino Kaku Gothic ProN’, ‘メイリオ’, ‘Meiryo’, ‘ＭＳ Ｐゴシック’, ‘MS PGothic’, sans-serif;
 
 $header-margin: 20px;
 $top-margin: 20px;
@@ -44,6 +44,8 @@ $border-radius: 0;
 
 /* nice sticky footer, from http://getbootstrap.com/examples/sticky-footer/ */
 html, body {
+  letter-spacing: 0.7px;
+//  line-height: 1.2em;
   height: 100%;
   background-color: $back-ground-color;
   color: $default-text-color;
@@ -232,5 +234,20 @@ article.post {
   .list-group-item {
     @extend .text-group;
     padding: 10px 3px;
+  }
+}
+
+
+
+.members {
+  .member {
+    height: 120px;
+    .icon {
+      float:left;
+      width: 120px;
+      height: 120px;
+      margin-right: 20px;
+      border-radius: 100%;
+    }
   }
 }
