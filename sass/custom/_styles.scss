@@ -1,4 +1,5 @@
 $menu-font: 'Nunito', sans-serif;
+$text-font: 'Nunito', sans-serif;
 
 $header-margin: 20px;
 $top-margin: 20px;
@@ -46,6 +47,7 @@ html, body {
   height: 100%;
   background-color: $back-ground-color;
   color: $default-text-color;
+  font-family: $text-font;
   /* The html and body elements cannot have any padding or margin. */
   a {
     @extend .dark-link;
@@ -55,7 +57,6 @@ html, body {
     @extend .dark-link-hover;
   }
 }
-
 /* Wrapper for page content to push down footer */
 #wrap {
   min-height: 100%;
@@ -178,8 +179,10 @@ article[role="article"] .page-header {
   background-color: #fff;
   border-bottom: 0px solid $em-text-color;
   .entry-title {
+//    @extend .dark-link;
     @extend .header-text;
   }
+
 }
 
 //////// Page content /////////
@@ -197,6 +200,8 @@ article.post {
 .page-content, .sidebar {
   margin-top: $header-margin;
 }
+
+
 .pager {
   li a, .preview a {
     padding: 10px 25px;

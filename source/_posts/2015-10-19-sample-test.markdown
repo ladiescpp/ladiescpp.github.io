@@ -1,9 +1,6 @@
 ---
 layout: post
-title: "Sample test"
+title: ""
 date: 2015-10-19 01:13:42 +0900
-comments: true
-categories: sample
+categories: meetup
 ---
-
-これがさんぷるだよ〜
