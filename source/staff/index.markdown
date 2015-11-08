@@ -21,7 +21,7 @@ footer: true
     <div class="member">
         <img class="icon" src="">
          <h3>@scitamehtam</h3>
-
+         Comming soon.....
 
     </div>
 </div>
