@@ -1,0 +1,253 @@
+$menu-font: 'Nunito', ‘ヒラギノ角ゴ ProN W3’, ‘Hiragino Kaku Gothic ProN’, ‘メイリオ’, ‘Meiryo’, ‘ＭＳ Ｐゴシック’, ‘MS PGothic’, sans-serif;
+$text-font: 'Nunito', ‘ヒラギノ角ゴ ProN W3’, ‘Hiragino Kaku Gothic ProN’, ‘メイリオ’, ‘Meiryo’, ‘ＭＳ Ｐゴシック’, ‘MS PGothic’, sans-serif;
+
+$header-margin: 20px;
+$top-margin: 20px;
+$border-radius: 0;
+
+//////////////////////////////
+/* Parent set */
+.light-link {
+  color: $back-ground-color;
+}
+
+.dark-link {
+  color: $dark-link-color;
+}
+
+.dark-link-hover {
+  color: $dark-link-color-hover;
+}
+
+.header-text {
+  color: $em-text-color;
+}
+
+.dark-background {
+  background-color: $header-color;
+}
+
+
+.text-group {
+  background-color: white;
+  //  border-bottom: 2px solid #ccc;
+  box-shadow: 0 20px 20px -20px rgba(0,0,0,0.2);
+}
+//////////////////////////////
+
+
+
+
+
+
+
+
+/* nice sticky footer, from http://getbootstrap.com/examples/sticky-footer/ */
+html, body {
+  letter-spacing: 0.7px;
+  line-height: 180%;
+  height: 100%;
+  background-color: $back-ground-color;
+  color: $default-text-color;
+  font-family: $text-font;
+  /* The html and body elements cannot have any padding or margin. */
+  a {
+    @extend .dark-link;
+  }
+
+  a:hover {
+    @extend .dark-link-hover;
+  }
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+footer[role=contentinfo] {
+  height: 60px;
+}
+
+/* print page content only no header, footer and asides, works with any page layout */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  /* use .no-print if you want to hide something inside page-content from printing */
+  .no-print, .no-print * {
+    display: none !important;
+  }
+  .page-content, .page-content * {
+    visibility: visible;
+  }
+  .page-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+
+
+header {
+  font-family: $menu-font;
+
+  .container {
+    height: 100%;
+  }
+
+  .navbar {
+    width: 100%;
+    padding: $header-margin;
+    border: 1px solid transparent;
+    background-color: $header-color;
+
+    
+    .navbar-header {
+      a {
+        color: $accent-color;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    }
+
+    ul {
+      height: 100%;
+      li {
+        width: 100px;
+        text-align: center;
+        a {
+          @extend .light-link;
+          display: inline-block;
+          margin: 0 auto;
+
+        }
+        a:hover {
+          background-color: transparent;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+}
+
+/*side*/
+.sidebar {
+  margin-top: $top-margin;
+}
+
+/*h_n*/
+
+article {
+  .page-header {
+    font-family: $menu-font;
+    border-bottom: 0 solid $em-text-color;
+    padding: 10px 20px;
+    margin: 0;
+//    @extend .dark-background;
+
+    .entry-title {
+      @extend .light-link;
+      font-size: 2.5em;
+      margin: 0;
+      font-weight: bold;
+      a {
+        @extend .dark-link;
+      }
+      a:hover {
+        @extend .dark-link-hover;
+      }
+    }
+  }
+
+  .entry-date {
+    text-align: right;
+  }
+  .entry-content {
+    @extend .text-group;
+    padding: 15px 20px;
+  }
+}
+
+article[role="article"] .page-header {
+  background-color: #fff;
+  border-bottom: 0px solid $em-text-color;
+  .entry-title {
+//    @extend .dark-link;
+    @extend .header-text;
+  }
+
+}
+
+//////// Page content /////////
+//.page-content {
+//  background-color: white;
+//}
+
+article.post {
+  @extend .text-group;
+}
+
+//////////////////////////////
+
+
+.page-content, .sidebar {
+  margin-top: $header-margin;
+}
+
+
+.pager {
+  li a, .preview a {
+    padding: 10px 25px;
+    @extend .light-link;
+    background-color: $header-color;
+    border-radius: 0;
+  }
+
+  li a:hover, .preview a:hover {
+    @extend .light-link;
+    background-color: $header-color;
+  }
+}
+
+
+.panel {
+  .panel-heading {
+    border-radius: $border-radius;
+    font-family: $menu-font;
+    @extend .dark-background;
+    @extend .light-link;
+
+    .panel-title {
+      font-size: 1em;
+    }
+  }
+
+  .list-group-item {
+    @extend .text-group;
+    padding: 10px 3px;
+  }
+}
+
+
+
+.members {
+  .member {
+    height: 120px;
+    .icon {
+      float:left;
+      width: 120px;
+      height: 120px;
+      margin-right: 20px;
+      border-radius: 100%;
+    }
+  }
+}

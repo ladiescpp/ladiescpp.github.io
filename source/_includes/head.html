@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--
+
+      o　　　ﾟ　o　　　　ﾟ　　ﾟ　　o
+    　○ ＜"￣＼ 。　o .　ﾟ　　　｡
+    。 ﾟ.o |＿＿__） 。.ﾟ　　Welcome to Ladies++
+    　。ヽ(´・ω・`)/　。ﾟ　　　　o
+    。　 （::. 　　 ）。　ﾟ.　　o
+     __       _______  _______   __  _______  _______
+    |  |     |   _   ||       \ |  ||   ____||   ____|    __        __
+    |  |     |  |_|  ||  .--.  ||  ||  |__   |  |____  __|  |__  __|  |__
+    |  |     |   _   ||  |  |  ||  ||   __|  |_____  ||__    __||__    __|
+    |  |____ |  | |  ||  '--'  ||  ||  |____  _____| |   |__|      |__|
+    |_______||__| |__||_______/ |__||_______||_______|
+    
+    ====================================================
+    #                                                  #
+    #         ::::::::    :::::::::   :::::::::        #
+    #        :+:    :+:   :+:    :+:  :+:    :+:       #
+    #        +:+          +:+    +:+  +:+    +:+       #
+    #        +#+          +#++:++#+   +#++:++#+        #
+    #        +#+          +#+         +#+              #
+    #        #+#    #+#   #+#         #+#              #
+    #         ########    ###         ###              #
+    #                                                  #
+    ====================================================
+  
+  -->
+
+  <title>{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} - {% endif %}{{ site.title }}</title>
+  <meta name="author" content="{{ site.author }}">
+
+  {% if page.description %}<meta name="description" content="{{ page.description | strip_html | condense_spaces | truncate:150 }}">{% endif %}
+  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+
+  <script type="text/javascript">
+    console.log("%cJoin Ladies++!!%c\n> %cWe welcome your contribution \u2665 ladiescpp\u2665gmail.com", "color: #ba9b68  ; font-size: 3em; font-weight: bold;","color: black; font-size: 1em;","color: black; font-size: 2em;");
+  </script>
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
+  <link rel="canonical" href="{{ canonical }}">
+  <link href="{{ root_url }}/favicon.png" type="image/png" rel="icon">
+  <link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+
+  <!-- http://opengraphprotocol.org/ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:title" content="{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase | truncate:70 }}{% else %}{{ page.title | truncate:70 }}{% endif %} - {% endif %}{{ site.title }}">
+  {% if page.title %}{% if page.description %}<meta property="og:description" content="{{ page.description | strip_html | condense_spaces | truncate:200 }}">{% endif %}{% else %}{% if site.description %}<meta property="og:description" content="{{ site.description | truncate:200 }}">{% endif %}{% endif %}
+
+  {% include custom/head.html %}
+
+  {% comment %}
+    screen.css is included after custom/head so it can override stuff like Bootstrap fonts etc.
+  {% endcomment %}
+  <link href="{{ root_url }}/stylesheets/screen.css" media="screen, projection, print" rel="stylesheet" type="text/css">
+
+  {% include google_analytics.html %}
+</head>
