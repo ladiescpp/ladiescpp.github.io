@@ -28,7 +28,7 @@ footer: true
 ---
 <div class="members">
     <div class="member">
-        <img class="icon" src="/images/denkiwakame.png">
+        <img class="icon" src="/images/staff/denkiwakame.png">
          <h3>@denkiwakame</h3>
          新米研究員<br>
          企業研究所ではたらく修行僧です。
