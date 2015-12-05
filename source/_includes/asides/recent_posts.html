@@ -2,8 +2,15 @@
   <div class="panel-heading">
     <h3 class="panel-title">RECENT EVENT</h3>
   </div>
-  {{ site.post }}
+  <!-- {{ site.post }} -->
   <div id="recent_posts" class="list-group">
+
+  <a class="aside_event" href="http://ladiespp.connpass.com/event/22836/">
+    <div class="aside_event">
+    <span class="label label-danger">募集中</span> 2015/12/06 Meetup #1
+    </div>
+  </a>
+
     <!--{% for post in site.posts limit: site.recent_posts %}-->
     <!--<a class="list-group-item {% if post.url == page.url %}active{% endif %}" href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>-->
     <!--{% endfor %}-->
