@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Meetup | Ladies++]]></title>
   <link href="http://ladiespp.github.io/blog/categories/meetup/atom.xml" rel="self"/>
   <link href="http://ladiespp.github.io/"/>
-  <updated>2015-11-08T17:06:30+09:00</updated>
+  <updated>2015-12-05T15:02:50+09:00</updated>
   <id>http://ladiespp.github.io/</id>
   <author>
     <name><![CDATA[ladies++]]></name>
@@ -14,11 +14,21 @@
 
   
   <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://ladiespp.github.io/blog/2015/10/19/sample-test/"/>
-    <updated>2015-10-19T01:13:42+09:00</updated>
-    <id>http://ladiespp.github.io/blog/2015/10/19/sample-test</id>
-    <content type="html"><![CDATA[
+    <title type="html"><![CDATA[Meetup #1を開催します!!]]></title>
+    <link href="http://ladiespp.github.io/blog/2015/12/05/sample-test/"/>
+    <updated>2015-12-05T01:13:42+09:00</updated>
+    <id>http://ladiespp.github.io/blog/2015/12/05/sample-test</id>
+    <content type="html"><![CDATA[<p><a href="http://ladiespp.connpass.com/event/22836/">女性のためのC++コミュニティ Ladies++ meetup #1</a></p>
+
+<p>12/6(日)、meetup #1を開催します！！
+思ったより人が集まりそうで嬉しいです・・・！</p>
+
+<p>本日12/5のBoost勉強会でLadies++の紹介をしてきました。<br/>
+明日は女性C++erにたくさん会えると良いな( o･ω･)ﾉ</p>
+
+<p><a href="http://www.slideshare.net/cocodrips/c-ladies">女性のためのC++コミュニティ Ladies++</a></p>
+
+<p>@cocodrips</p>
 ]]></content>
   </entry>
   
