@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Ladies++]]></title>
-  <link href="http://ladiespp.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Online | Ladies++]]></title>
+  <link href="http://ladiespp.github.io/blog/categories/online/atom.xml" rel="self"/>
   <link href="http://ladiespp.github.io/"/>
   <updated>2016-03-26T02:12:50+09:00</updated>
   <id>http://ladiespp.github.io/</id>
@@ -60,25 +60,6 @@ slack上で問題の答え合わせをみんなでしあうようなイベント
 <p>↓SICP勉強会を開催しているSlackの申請はこちらから↓</p>
 
 <p><a href="https://docs.google.com/forms/d/1AD-59tm7_PJC0lkjUBrmH9Z_i19M6H29UUJU0O_x92U/viewform">申請フォーム - Join Ladies++!!</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Meetup #1を開催します!!]]></title>
-    <link href="http://ladiespp.github.io/blog/2015/12/05/sample-test/"/>
-    <updated>2015-12-05T01:13:42+09:00</updated>
-    <id>http://ladiespp.github.io/blog/2015/12/05/sample-test</id>
-    <content type="html"><![CDATA[<p><a href="http://ladiespp.connpass.com/event/22836/">女性のためのC++コミュニティ Ladies++ meetup #1</a></p>
-
-<p>12/6(日)、meetup #1を開催します！！
-思ったより人が集まりそうで嬉しいです・・・！</p>
-
-<p>本日12/5のBoost勉強会でLadies++の紹介をしてきました。<br/>
-明日は女性C++erにたくさん会えると良いな( o･ω･)ﾉ</p>
-
-<p><a href="http://www.slideshare.net/cocodrips/c-ladies">女性のためのC++コミュニティ Ladies++</a></p>
-
-<p>@cocodrips</p>
 ]]></content>
   </entry>
   
