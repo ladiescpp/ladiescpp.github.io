@@ -4,13 +4,21 @@
   </div>
   <!-- {{ site.post }} -->
   <div id="recent_posts" class="list-group">
-
-  <a class="aside_event" href="http://ladiespp.connpass.com/event/22836/">
     <div class="aside_event">
-    <span class="label label-danger">募集中</span> 2015/12/06 Meetup #1
-    </div>
-  </a>
 
+      <p>
+      <a href="http://ladiespp.connpass.com/event/22836/">
+        <span class="label label-success">定期</span>SICP読書会(オンライン) </a>
+      </p>
+      <!--<span class="label label-danger">終了</span> 2015/12/06 Meetup #1 </a>-->
+
+      <p>
+      <a href="http://ladiespp.connpass.com/event/22836/">
+        <span class="label label-default">終了</span>2015/12/06 Meetup #1 </a>
+      </p>
+      <!--<span class="label label-danger">終了</span> 2015/12/06 Meetup #1 </a>-->
+    </div>
+    
     <!--{% for post in site.posts limit: site.recent_posts %}-->
     <!--<a class="list-group-item {% if post.url == page.url %}active{% endif %}" href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>-->
     <!--{% endfor %}-->
@@ -25,7 +33,15 @@
   <div id="recent_posts" class="list-group">
     <div class="list-group-item">
       <a class="twitter-timeline" href="https://twitter.com/ladiescpp" data-widget-id="657973954632531968">@ladiescppさんのツイート</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <script>!function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = p + "://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      }(document, "script", "twitter-wjs");</script>
 
     </div>
 
